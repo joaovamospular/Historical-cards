@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cartas</title>
+        <link rel="stylesheet" href="CSS3.css">
+    </head>
+    <body>
+        <div class="cabeçadapagina">
+            <header>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">MENU</a>
+                        </li>
+                        <li>
+                            <a href="creditos.html">CREDITOS</a>
+                        </li>
+                        <li>
+                            <a href="#" class="abrir" onclick="abrirMenu()">&#9776; Menu</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <nav id="barralat">
+            <a href="#" class="barralata" onclick="fecharMenu()">FECHAR</a>
+            <a href="cartas.html" class="barralata">CARTAS</a>
+            <a href="Regras.html" class="barralata">REGRAS</a>
+            <a href="creditos.html" class="barralata">CREDITOS</a>
+        </nav>
+        <main class="conteudo">
+
+            <div class="imgtxtcreditos">
+                <img src="CREDITOS.png" height="400px" width="600px">
+                <p>Site: Julia Akemi & João Vale Cartas: Sophia Baia, Leonardo Busio, David
+                    Melquíades Uml:João Vale Regras: coleta de dados:
+                </p>
+
+            </div>
+
+        </main>
+        <script>
+            function abrirMenu() {
+                document
+                    .getElementById('barralat')
+                    .style
+                    .width = '250px';
+                document
+                    .getElementById('conteudo')
+                    .style
+                    .marginLeft = '250px';
+
+            }
+            function fecharMenu() {
+                document
+                    .getElementById('barralat')
+                    .style
+                    .width = '0px';
+                document
+                    .getElementById('conteudo')
+                    .style
+                    .marginLeft = '0px'
+            }
+        </script>
+    </body>
+</html>
