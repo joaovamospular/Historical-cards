@@ -1,0 +1,97 @@
+/*essa parte é o body da pagina, fundo da pagina etc*/
+body {
+    background-image: url("background.png");
+    background-repeat: repeat-y;
+}
+
+/*essa parte aqui de baixo é a cabeça da pagina, aquela q você clica p mudar de pagina*/
+header {
+
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 5px 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-family: 'Helvetica';
+    text-decoration: none;
+    color: #f2d2b6;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f25e3d;
+}
+/*Aqui é a parte das cartas!*/
+.modelo {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.modelo:hover {
+    height: 330px;
+    width: 220px;
+}
+#barralat {
+    height: 100%;
+    width: 0;
+    background-color: #0d0000;
+    color: #f2d2b6;
+    overflow: hidden;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+.barralata {
+    font-size: 15px;
+    display: flex;
+    padding: 12px 10px 12px 32px;
+    color: #f2d2b6;
+    font-family: 'Helvetica';
+    font-weight: bold;
+    border-radius: 20px;
+}
+.barralata:hover {
+    background-color: #2f2231da;
+    color: #fff;
+}
+.imgtxtcreditos {
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 800px;
+    margin-top: -36px;
+
+}
+
+.imgtxtcreditos img {
+    margin-bottom: 20px;
+}
+
+.imgtxtcreditos p {
+    font-family: 'Helvetica';
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+}

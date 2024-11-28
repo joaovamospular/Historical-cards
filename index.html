@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cartas</title>
+        <link rel="stylesheet" href="CSS2.css">
+    </head>
+    <body>
+        <div class="cabeçadapagina">
+            <header>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">MENU</a>
+                        </li>
+                        <li>
+                            <a href="creditos.html">CREDITOS</a>
+                        </li>
+                        <li>
+                            <a href="#" class="abrir" onclick="abrirMenu()">&#9776; Menu</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <nav id="barralat">
+            <a href="#" class="barralata" onclick="fecharMenu()">FECHAR</a>
+            <a href="cartas.html" class="barralata">CARTAS</a>
+            <a href="Regras.html" class="barralata">REGRAS</a>
+            <a href="creditos.html" class="barralata">CREDITOS</a>
+        </nav>
+        <main class="conteudo">
+
+            <!--aqui fica td o conteudo da parte-->
+
+            <img class="imgtopo" src="imgtopo.png">
+            <img class="cartas" src="cartasmenu.png">
+            <p class="texto">Em Legados do Tempo, cada jogador usa cartas de figuras
+                históricas, 
+                <br>
+                como
+                Einstein, Cleópatra e Gengis Khan, para competir em 
+                estratégias
+                <br>
+                que combinam poder, conhecimento e influência. O objetivo é acumular "Legados",
+                representando conquistas históricas. 
+                <br>
+                Cada carta traz habilidades únicas e curiosidades, misturando aprendizado
+                <br>
+                e diversão. Quem será o maior estrategista
+                da história?</p>
+        </main>
+        <script>
+            function abrirMenu() {
+                document
+                    .getElementById('barralat')
+                    .style
+                    .width = '250px';
+                document
+                    .getElementById('conteudo')
+                    .style
+                    .marginLeft = '250px';
+
+            }
+            function fecharMenu() {
+                document
+                    .getElementById('barralat')
+                    .style
+                    .width = '0px';
+                document
+                    .getElementById('conteudo')
+                    .style
+                    .marginLeft = '0px'
+            }
+        </script>
+    </body>
+</html>
