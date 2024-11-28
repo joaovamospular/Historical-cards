@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartas</title>
+    <link rel="stylesheet" href="css4.css">
+</head>
+<body>
+    <div class="cabeçadapagina">
+<header>
+   <nav>
+        <ul>
+          <li> <a href="index.html">MENU</a></li>
+          <li><a href="#">CREDITOS</a></li>
+          <li><a href="#" class="abrir" onclick="abrirMenu()">&#9776; Menu</a></li>
+        </ul>
+   </nav>
+</header>
+</div>
+<nav id="barralat">
+    <a href="#" class="barralata" onclick="fecharMenu()">FECHAR</a>
+    <a href="cartas.html" class="barralata">CARTAS</a>
+    <a href="Regras.html" class="barralata">REGRAS</a>
+    <a href="creditos.html" class="barralata">CREDITOS</a>
+</nav>
+<main class="conteudo">
+
+
+<!--aqui fica td o conteudo da parte-->
+
+<div class="regras">
+    <h2>Materiais</h2>
+    <ul>
+        <li>85 cartas de personagem</li>
+        <li>15 cartas de suporte</li>
+        <li>40 moedas do Banco Central</li>
+    </ul>
+
+    <h2>Regras</h2>
+    <p>Cada jogador vai iniciar o jogo com 3 cartas que vão ser embaralhadas e distribuídas, e também tem direito de pegar uma carta de suporte.</p>
+    <p>As cartas devem estar viradas para baixo, de forma que apenas o jogador saiba quais são suas cartas.</p>
+    <h3>Modelo da carta:</h3>
+    <p>Cada carta tem uma habilidade que pode ser utilizada uma vez durante a partida. Existem habilidades que permitem que alguns personagens peguem mais ou roubem moedas de outros personagens.</p>
+    <p>Cada participante começa o jogo com duas moedas, e a cada rodada eles podem pegar uma moeda do banco Central. Essas moedas servem para executar a habilidade da sua carta de suporte.</p>
+    <p>Após usar sua carta de suporte, você deve colocá-la novamente no monte e pegar uma nova.</p>
+    <h3>As cartas de suporte servem para:</h3>
+    <ul>
+        <li>Bloquear as ações de outros jogadores</li>
+        <li>Retirar pontos de vida</li>
+        <li>Recuperar vida</li>
+        <li>Roubar moedas</li>
+    </ul>
+
+    <h3>Pontos de vida:</h3>
+    <p>Caso você seja atingido com uma habilidade, carta de suporte ou golpe de Estado, você perde uma quantidade determinada de pontos de vida. Se a sua carta perder todos os pontos de vida, você perde a mesma.</p>
+
+    <h3>Golpe de Estado:</h3>
+    <p>Ao acumular 8 moedas, você pode dar um golpe de Estado. Você paga as 8 moedas ao banco Central e pode matar uma carta de qualquer jogador.</p>
+
+    <h3>Blefe:</h3>
+    <p>Somente você deve saber quais são suas cartas. Com isso, você pode pensar sobre quais personagens tem. Contudo, caso alguém duvide da sua veracidade e você realmente não tiver a carta que diz que tem, você vai perdê-la. Porém, se alguém duvidar de você e você realmente tiver a carta, a pessoa que duvidou perde uma das suas 3 cartas.</p>
+
+    <h3>Exemplo:</h3>
+    <p>O jogo começa, e eu tenho 3 cartas: Rita Lee, Mussolini, e Che Guevara. Minha carta de suporte é "Comunismo".</p>
+    <p>Ao iniciar o jogo, começo com duas moedas. Uma rodada se passa e eu pego mais uma moeda no banco Central. Então, vou executar a minha carta de suporte.</p>
+    <p>A carta "Comunismo" dá habilidades positivas ao Che Guevara, meu personagem, mas prejudica o Mussolini, meu outro personagem. No entanto, como estou executando a carta, meu personagem Mussolini não sofre dano algum, apenas afeta meus adversários.</p>
+</div>
+
+</main>
+<script>
+    function abrirMenu() {
+        document.getElementById('barralat').style.width ='250px';
+        document.getElementById('conteudo').style.marginLeft='250px';
+
+    }
+    function fecharMenu(){
+        document.getElementById('barralat').style.width ='0px';
+        document.getElementById('conteudo').style.marginLeft='0px'
+    }
+</script>
+</body>
+</html>
